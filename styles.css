@@ -208,7 +208,6 @@ border-radius: 4px;
     background: #FFFFFF;
     border-radius: 16px 0px 0px 16px;
     z-index: 999;
-    transition: 1s;
   }
   .pseudo-menu{
     display: flex;
@@ -226,7 +225,7 @@ border-radius: 4px;
 
     .menu-container.open{
       display: flex;
-      right:0;
+      animation: open-menu 1s;
     }
 
     .closer{
@@ -326,4 +325,9 @@ border-radius: 4px;
       background-color: rgba(0,0,0,0.6);
     }
     .dropdown>li>a{font-size: 14px;}
+}
+
+@keyframes open-menu {
+  from {right:-280px;}
+  to {right:0px;}
 }
