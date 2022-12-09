@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title>Menu</title>
+</head>
+<body>
+<div class="navigation">
+   <div class="pseudo-menu">
+        <div class="logo">
+        <img src="https://static.tildacdn.com/tild3963-3030-4339-b232-343166343332/zb-logo-violet.svg">
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+       </div>
+   </div>
+   <div class="shadow"></div>
+   <div class="menu-container">
+    <div class="closer">
+        <div>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        </div>
+    </div>
+    <div class="logo"><img src="https://static.tildacdn.com/tild3963-3030-4339-b232-343166343332/zb-logo-violet.svg"></div>
+    <div class="menu">
+        <ul class="general">
+            <li>
+                <a href="#"><span class="arrow-container"><span class="arrow"></span></span>Тип бизнеса</a>
+                <ul class="dropdown">
+                    <li><a href="/rest">Ресторанам</a></li>
+                    <li><a href="/corp">Корпоративным клиентам</a></li>
+                    <li><a href="/clothes">Магазинам одежды и обуви</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="arrow-container"><span class="arrow"></span></span>Предложения партнёров</a>
+                <ul class="dropdown">
+                    <li><a href="/okko">Okko</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="arrow-container"><span class="arrow"></span></span>Услуги</a>
+                <ul class="dropdown">
+                    <li><a href="/audio_ads">Аудиореклама</a></li>
+                    <li><a href="/player">Плеер</a></li>
+                    <li><a href="/video">Видеоконтент</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="arrow-container"><span class="arrow"></span></span>Материалы</a>
+                <ul class="dropdown">
+                    <li><a href="/blog">Блог</a></li>
+                    <li><a href="/faq">Вопрос-ответ</a></li>
+                    <li><a href="/events">Мероприятия</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="login-and-phone">
+        <div class="phone"><a>8 800 550 59 31</a></div>
+        <div class="login-button"><a href="#popup:smartlk_login">Войти</a></div>
+    </div>
+   </div>
+</div>
+
+   <script>
+    const burger = document.querySelector('.burger');
+    const closer = document.querySelector('.closer')
+    const menu = document.querySelector('.menu-container');
+    const shadow = document.querySelector('.shadow');
+    
+    function toggleMenu() {
+    menu.classList.toggle('open');
+    shadow.classList.toggle('open');
+    }
+
+    function closeMenu(){
+    menu.classList.remove('open');
+    shadow.classList.remove('open');    
+    }
+    
+    burger.addEventListener('click', toggleMenu);
+    closer.addEventListener('click', closeMenu);
+    shadow.addEventListener('click', closeMenu);
+    </script>
+</body>
+</html>
