@@ -193,7 +193,6 @@ border-radius: 4px;
 @media screen and (max-width:1024px){
   .menu-container{
     display: none;
-    
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
@@ -204,7 +203,7 @@ border-radius: 4px;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     left: auto;
-    right:-280;
+    right:-280px;
     top: 0px;
     background: #FFFFFF;
     border-radius: 16px 0px 0px 16px;
