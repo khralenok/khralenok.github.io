@@ -11,6 +11,8 @@ text-decoration: none;
   position: fixed;
   top:0;
   left:0;
+  right: 0;
+  bottom: 0;
 }
 
 a{
@@ -127,7 +129,6 @@ align-items: flex-start;
 padding: 4px 16px;
 
 width: 240px;
-
 border-radius: 4px;
 }
 
@@ -206,11 +207,7 @@ border-radius: 4px;
     left: 0px;
     top: 0px;
     }
-    .menu-container.closed{
-      animation-name: menu-trasition;
-      animation-duration: 1s;
-      animation-direction: reverse;
-    }
+
     .menu-container.open{
       display: flex;
       flex-direction: column;
