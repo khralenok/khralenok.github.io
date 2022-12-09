@@ -203,7 +203,7 @@ border-radius: 4px;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     left: auto;
-    right:-280px;
+    right:0px;
     top: 0px;
     background: #FFFFFF;
     border-radius: 16px 0px 0px 16px;
@@ -225,7 +225,6 @@ border-radius: 4px;
 
     .menu-container.open{
       display: flex;
-      animation: open-menu 1s;
     }
 
     .closer{
@@ -325,9 +324,4 @@ border-radius: 4px;
       background-color: rgba(0,0,0,0.6);
     }
     .dropdown>li>a{font-size: 14px;}
-}
-
-@keyframes open-menu {
-  from {right:-280px;}
-  to {right:0px;}
 }
