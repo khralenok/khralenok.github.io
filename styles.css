@@ -220,7 +220,7 @@ border-radius: 4px;
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
       left: auto;
-      right: 0px;
+      right: -280px;
       top: 0px;
       background: #FFFFFF;
       border-radius: 16px 0px 0px 16px;
@@ -329,6 +329,6 @@ border-radius: 4px;
 }
 
 @keyframes menu-trasition {
-  from {transform: translate(280px);}
-  to {transform: translate(0px);}
+  from {right:-280px;}
+  to {right:0}
 }
