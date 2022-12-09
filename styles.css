@@ -193,6 +193,22 @@ border-radius: 4px;
 @media screen and (max-width:1024px){
   .menu-container{
     display: none;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 43px;
+    position: absolute;
+    width: 280px;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    left: auto;
+    right:-280;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 16px 0px 0px 16px;
+    z-index: 999;
   }
   .pseudo-menu{
     display: flex;
@@ -210,23 +226,8 @@ border-radius: 4px;
 
     .menu-container.open{
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding: 20px;
-      gap: 43px;
-      position: absolute;
-      width: 280px;
-      height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
-      left: auto;
-      right: -280px;
-      top: 0px;
-      background: #FFFFFF;
-      border-radius: 16px 0px 0px 16px;
-      z-index: 999;
-      animation-name: menu-trasition;
-      animation-duration: 1s;
+      right:0;
+      transition: 1s;
     }
 
     .closer{
@@ -326,9 +327,4 @@ border-radius: 4px;
       background-color: rgba(0,0,0,0.6);
     }
     .dropdown>li>a{font-size: 14px;}
-}
-
-@keyframes menu-trasition {
-  from {right:-280px;}
-  to {right:0}
 }
