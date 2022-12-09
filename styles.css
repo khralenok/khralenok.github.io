@@ -208,6 +208,7 @@ border-radius: 4px;
     background: #FFFFFF;
     border-radius: 16px 0px 0px 16px;
     z-index: 999;
+    transition: 1s;
   }
   .pseudo-menu{
     display: flex;
@@ -226,7 +227,6 @@ border-radius: 4px;
     .menu-container.open{
       display: flex;
       right:0;
-      transition: 1s;
     }
 
     .closer{
